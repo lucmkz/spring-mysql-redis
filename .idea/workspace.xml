@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="" />
+    <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/start/AplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AplicationStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/endpoint/ProductEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/endpoint/ProductEndpoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/start/AplicationStart.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,11 +38,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1c5ZtC5eCoBwXeEGFaw4EPY7epd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,11 +67,11 @@
   </component>
   <component name="RunManager">
     <configuration name="AplicationStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.springMysql.start.AplicationStart" />
+      <option name="MAIN_CLASS_NAME" value="AplicationStart" />
       <module name="mysql-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.springMysql.start.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,5 +97,16 @@
       <updated>1589820626533</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

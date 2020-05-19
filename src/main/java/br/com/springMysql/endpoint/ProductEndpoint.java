@@ -1,6 +1,12 @@
 package br.com.springMysql.endpoint;
 
+import br.com.springMysql.error.CustomErrorType;
 import br.com.springMysql.model.Product;
+import br.com.springMysql.util.DateUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,10 +20,29 @@ import static java.util.Arrays.asList;
  */
 
 @RestController
-@RequestMapping("product")
+@RequestMapping("products")
 public class ProductEndpoint {
-    @RequestMapping(method = RequestMethod.GET, path = "/list")
-    public List<Product> listAll(){
-        return asList(new Product("Lucas", 1, 2, 3), new Product("Lucass", 2, 3, 4));
+//    private DateUtil dateUtil;
+//
+//    @Autowired
+//    public ProductEndpoint(DateUtil dateUtil) {
+//        this.dateUtil = dateUtil;
+//    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<?> listAll(){
+        return new ResponseEntity<>(Product.productList, HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/{id}")
+    public ResponseEntity<?> getProductById(@PathVariable("id") int id){
+        Product product = new Product();
+        product.setId(id);
+        int index = Product.productList.indexOf(product);
+
+        if(index == -1) {
+            return new ResponseEntity<>(new CustomErrorType("Product not found"), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(Product.productList.get(index), HttpStatus.OK);
     }
 }

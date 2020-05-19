@@ -6,10 +6,7 @@ import br.com.springMysql.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -44,5 +41,11 @@ public class ProductEndpoint {
             return new ResponseEntity<>(new CustomErrorType("Product not found"), HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(Product.productList.get(index), HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> save(@RequestBody Product product){
+        Product.productList.add(product);
+        return new ResponseEntity<>(product, HttpStatus.OK);
     }
 }

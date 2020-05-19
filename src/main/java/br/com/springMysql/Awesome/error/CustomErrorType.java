@@ -1,4 +1,4 @@
-package br.com.springMysql.error;
+package br.com.springMysql.Awesome.error;
 
 public class CustomErrorType {
     private String errorMessage;

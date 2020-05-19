@@ -38,6 +38,11 @@ public class ProductEndpoint {
         return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
+    @GetMapping(path = "/findByName/{name}")
+    public ResponseEntity<?> findStudantsByName(@PathVariable String name) {
+        return new ResponseEntity<>(productDAO.findByNameIgnoreCaseContaining(name), HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<?> save(@RequestBody Product product){
         return new ResponseEntity<>(productDAO.save(product), HttpStatus.OK);

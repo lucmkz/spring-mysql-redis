@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Cache/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/ProductServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/AplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/AplicationStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/endpoint/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/endpoint/ProductEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/AplicationStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/AplicationStart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/endpoint/ProductEndpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/endpoint/ProductEndpoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +56,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -106,13 +127,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/endpoint/ProductEndpoint.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/ProductServices.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,8 @@
 package br.com.springMysql.Awesome.model;
 
+import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
+
 import javax.persistence.Entity;
 
 /**
@@ -16,5 +19,12 @@ public class Product extends AbstractEntity{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

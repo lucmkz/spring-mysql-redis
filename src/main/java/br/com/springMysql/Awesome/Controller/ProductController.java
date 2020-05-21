@@ -48,8 +48,8 @@ public class ProductController {
         Assert.notNull(product);
         product.setId(id);
         return Optional.ofNullable(productService.updateProduct(id, product))
-                .map(result -> new ResponseEntity(HttpStatus.NO_CONTENT))
-                .orElse(new ResponseEntity(HttpStatus.NOT_FOUND));
+                .map(result -> new ResponseEntity(product, HttpStatus.OK))
+                .orElse(new ResponseEntity(new CustomErrorType("Product not found, id doesnt exists"), HttpStatus.NOT_FOUND));
     }
 
 

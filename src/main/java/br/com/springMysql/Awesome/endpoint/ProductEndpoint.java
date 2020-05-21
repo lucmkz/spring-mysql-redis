@@ -23,7 +23,6 @@ import java.util.Optional;
 @RequestMapping("products")
 public class ProductEndpoint {
 
-//    private final ProductRepository productDAO;
     private final ProductServices productServices;
 
     @Autowired
@@ -31,35 +30,16 @@ public class ProductEndpoint {
         this.productServices = productServices;
     }
 
-
-//    @ResponseBody
-//    @Cacheable(value="name", key = "#root.args[0]")
-
-//    @GetMapping
-//    public ResponseEntity<?> listAll(){
-//        Product product = productServices.listAll();
-//        System.out.println("sout teste list");
-//        return new ResponseEntity<>(product, HttpStatus.OK);
-//    }
-
-
-    /**
-     * old Response
-     * */
-//    @GetMapping(path = "/{id}")
-//    public ResponseEntity<?> getProductById(@PathVariable("id") Long id){
-//
-//        Product product = productDAO.findOne(id);
-//
-//        if(product == null) {
-//            return new ResponseEntity<>(new CustomErrorType("Product not found"), HttpStatus.NOT_FOUND);
-//        }
-//        return new ResponseEntity<>(product, HttpStatus.OK);
-//    }
+    @PostMapping
+    public ResponseEntity<?> createProduct(@RequestBody Product product){
+        Assert.notNull(product);
+        return Optional.ofNullable(productServices.createProduct(product))
+                .map(result -> new ResponseEntity<>(result, HttpStatus.CREATED))
+                .orElse(new ResponseEntity<>(HttpStatus.CONFLICT));
+    }
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<?> getProductById(@PathVariable("id") Long id){
-
         Product product = productServices.getProduct(id);
         if(product == null) {
             return new ResponseEntity<>(new CustomErrorType("Product not found"), HttpStatus.NOT_FOUND);
@@ -73,6 +53,64 @@ public class ProductEndpoint {
 //                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
+    @PutMapping(path = "/{id}")
+    public ResponseEntity updateProduct(@PathVariable(value = "id") Long id, @RequestBody Product product){
+        Assert.notNull(product);
+        product.setId(id);
+        return Optional.ofNullable(productServices.updateProduct(id, product))
+                .map(result -> new ResponseEntity(HttpStatus.NO_CONTENT))
+                .orElse(new ResponseEntity(HttpStatus.NOT_FOUND));
+    }
+
+
+    @DeleteMapping(path = "/{id}")
+    public ResponseEntity<?> deleteProduct(@PathVariable Long id){
+        return Optional.ofNullable(productServices.deleteProduct(id))
+                .map(result -> new ResponseEntity<>(result, HttpStatus.NO_CONTENT))
+                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+    @GetMapping
+    public ResponseEntity<?> listAllProducts(){
+        return new ResponseEntity<>(productServices.listAllProducts(), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/findByName/{name}")
+    public ResponseEntity<?> findStudantsByName(@PathVariable String name) {
+        return new ResponseEntity<>(productServices.findByNameIgnoreCaseContaining(name), HttpStatus.OK);
+//        return new ResponseEntity<>(productDAO.findByNameIgnoreCaseContaining(name), HttpStatus.OK);
+    }
+//
+//    @PutMapping
+//    public ResponseEntity<?> updateProduct(@RequestBody Product product){
+//        System.out.println("teste");
+//        productDAO.save(product);
+//        return new ResponseEntity<>(HttpStatus.OK);
+//    }
+
+
+//    @ResponseBody
+//    @Cacheable(value="name", key = "#root.args[0]")
+
+//    @GetMapping
+//    public ResponseEntity<?> listAll(){
+//        Product product = productServices.listAll();
+//        System.out.println("sout teste list");
+//        return new ResponseEntity<>(product, HttpStatus.OK);
+//    }
+
+
+//    @GetMapping(path = "/{id}")
+//    public ResponseEntity<?> getProductById(@PathVariable("id") Long id){
+//
+//        Product product = productDAO.findOne(id);
+//
+//        if(product == null) {
+//            return new ResponseEntity<>(new CustomErrorType("Product not found"), HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(product, HttpStatus.OK);
+//    }
+
 
 //    @GetMapping(path = "/findByName/{name}")
 //    public ResponseEntity<?> findStudantsByName(@PathVariable String name) {
@@ -81,15 +119,6 @@ public class ProductEndpoint {
 //    }
 //
 
-    @PostMapping
-    public ResponseEntity<?> createProduct(@RequestBody Product product){
-        Assert.notNull(product);
-        return Optional.ofNullable(productServices.createProduct(product))
-                .map(result -> new ResponseEntity<>(result, HttpStatus.CREATED))
-                .orElse(new ResponseEntity<>(HttpStatus.CONFLICT));
-//        System.out.println("create cache");
-//        return new ResponseEntity<>(productServices.createProduct(product), HttpStatus.OK);
-    }
 //
 //    @DeleteMapping(path = "/{id}")
 //    public ResponseEntity<?> delete(@PathVariable Long id){
@@ -97,12 +126,7 @@ public class ProductEndpoint {
 //        return new ResponseEntity<>(HttpStatus.OK);
 //    }
 //
-//    @PutMapping
-//    public ResponseEntity<?> update(@RequestBody Product product){
-//        System.out.println("teste");
-//        productDAO.save(product);
-//        return new ResponseEntity<>(HttpStatus.OK);
-//    }
+
 
 //    @PutMapping
 //    public ResponseEntity<?> update(@RequestBody Product product){

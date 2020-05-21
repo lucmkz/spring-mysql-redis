@@ -63,13 +63,13 @@ public class ProductServices {
         return deleted;
     }
 
-//    @Cacheable(value = "listProducts")
+    @CacheEvict(value = "listProducts")
     public Iterable<Product> listAllProducts(){
         System.out.println("listAllProducts cache");
         return productRepository.findAll();
     }
 
-    @Cacheable(value = "findByNameIgnoreCaseContaining")
+    @CacheEvict(value = "findByNameIgnoreCaseContaining")
     public List<Product> findByNameIgnoreCaseContaining(String name) {
         return productRepository.findByNameIgnoreCaseContaining(name);
     }

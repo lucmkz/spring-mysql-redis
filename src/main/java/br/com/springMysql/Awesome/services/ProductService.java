@@ -1,4 +1,4 @@
-package br.com.springMysql.Awesome;
+package br.com.springMysql.Awesome.services;
 
 import br.com.springMysql.Awesome.Repository.ProductRepository;
 import br.com.springMysql.Awesome.model.Product;
@@ -6,19 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ProductServices {
+public class ProductService {
 
     private ProductRepository productRepository;
 
     @Autowired
-    public ProductServices(ProductRepository productRepository) {this.productRepository = productRepository;}
+    public ProductService(ProductRepository productRepository) {this.productRepository = productRepository;}
 
 //  Remove key when create a new product
     @CacheEvict(value = "product", key = "#product.getId()")

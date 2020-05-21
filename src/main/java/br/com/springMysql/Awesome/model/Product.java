@@ -1,14 +1,6 @@
 package br.com.springMysql.Awesome.model;
 
-import org.springframework.boot.autoconfigure.web.ResourceProperties;
-import org.springframework.data.redis.core.RedisHash;
-import org.springframework.data.redis.core.index.Indexed;
-
-import javax.annotation.Generated;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.util.Objects;
 
 /**

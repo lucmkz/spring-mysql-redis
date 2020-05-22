@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/CostumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/CostumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/services/CostumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/services/CostumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/CostumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/CostumerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/services/CostumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/services/CostumerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/mysql-spring.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/AbstractEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

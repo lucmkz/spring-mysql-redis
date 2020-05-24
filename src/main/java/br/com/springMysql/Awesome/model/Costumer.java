@@ -1,6 +1,7 @@
 package br.com.springMysql.Awesome.model;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import java.util.Objects;
 
 @Entity
@@ -10,6 +11,9 @@ public class Costumer extends AbstractEntity{
     private String deliveryAddress;
     private String houseAddress;
     private int documentId;
+
+    @OneToOne
+    private Order order;
 
     public Costumer() {
     }

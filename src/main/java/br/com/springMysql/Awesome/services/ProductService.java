@@ -49,7 +49,7 @@ public class ProductService {
     }
 
 //    Remove from cache if the product is retrived
-    @CacheEvict(value = "listProducts", key = "#id")
+    @CacheEvict(value = "deleteProducts", key = "#id")
     public boolean deleteProduct(Long id) {
         System.out.println("deleteProduct cache");
         boolean deleted = false;

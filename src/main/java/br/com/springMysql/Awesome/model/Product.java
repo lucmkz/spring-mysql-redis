@@ -15,18 +15,7 @@ public class Product extends AbstractEntity{
     private int quantity;
     private float value;
 
-    @ManyToOne
-    private Order order;
-
     public Product() {
-    }
-
-    public Order getOrder() {
-        return order;
-    }
-
-    public void setOrder(Order order) {
-        this.order = order;
     }
 
     public Product(String name, String code, int quantity, float value) {

@@ -1,9 +1,6 @@
 package br.com.springMysql.Awesome.model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -12,6 +9,7 @@ public class AbstractEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
+    @Column(unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 

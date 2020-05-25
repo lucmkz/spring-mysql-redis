@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("costumer")
+@RequestMapping("v1/costumer")
 public class CostumerController {
     private final CostumerService costumerService;
 

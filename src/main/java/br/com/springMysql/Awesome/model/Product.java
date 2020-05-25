@@ -1,6 +1,7 @@
 package br.com.springMysql.Awesome.model;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.util.Objects;
 
@@ -14,6 +15,7 @@ public class Product extends AbstractEntity{
     private String code;
     private int quantity;
     private float value;
+
 
     public Product() {
     }

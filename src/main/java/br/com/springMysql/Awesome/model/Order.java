@@ -9,9 +9,19 @@ import java.util.Objects;
 public class Order extends AbstractEntity{
 
 
-    @OneToMany(cascade = CascadeType.MERGE)
+    @OneToMany
     private List<Product> product;
 
+    @OneToOne
+    private Costumer costumer;
+
+    public Costumer getCostumer() {
+        return costumer;
+    }
+
+    public void setCostumer(Costumer costumer) {
+        this.costumer = costumer;
+    }
 
     @Override
     public String toString() {

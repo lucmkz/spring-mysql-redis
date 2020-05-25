@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("order")
+@RequestMapping("v1/order")
 public class OrderController {
     private final OrderService orderService;
 

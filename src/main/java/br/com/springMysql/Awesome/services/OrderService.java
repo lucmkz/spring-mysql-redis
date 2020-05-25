@@ -8,6 +8,7 @@ import br.com.springMysql.Awesome.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.json.JsonParser;
 import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.json.*;
@@ -25,16 +26,10 @@ public class OrderService {
     @Autowired
     public OrderService(OrderRepository orderRepository) {this.orderRepository = orderRepository;}
 
-//    @CacheEvict(value = "order", key = "#order.getId()")
+    @CacheEvict(value = "order", key = "#order.getId()")
     public Order createOrder (Order order){
         System.out.println(order);
-
-//        System.out.println("testeeee"+ order.getProduct());
-
         List<Product> listProducts = order.getProduct();
-
-//        Product resultt = null;
-
         for(Product item : listProducts){
             System.out.println("----------"+ item.getId());
             System.out.println("------------" + item.getId());
@@ -42,24 +37,30 @@ public class OrderService {
         }
 
         Order result = null;
-//        Product product = new Product();
-//        Product product1 = new Product();
-//        order.setProduct(Arrays.asList(product, product1));
-
-//        List<Product> listProducts = order.getProduct();
-
-//        System.out.println("------------");
-//
-//        for(Product item : listProducts){
-//            System.out.println("------------" + item);
-//        }
-//
-//        System.out.println("------------");
-
         if(!orderRepository.exists(order.getId())) {
             result = this.orderRepository.save(order);
         }
         return result;
+    }
+
+    @CachePut(value ="order", key = "#id")
+    public Order updateOrder(Long id, Order order) {
+        Order result = null;
+        if(orderRepository.exists(order.getId())) {
+            result = this.orderRepository.save(order);
+        }
+        return result;
+    }
+
+    @CacheEvict(value = "listOrder", key = "#id")
+    public boolean deleteOrder(Long id) {
+        boolean deleted = false;
+
+        if(orderRepository.exists(id)) {
+            this.orderRepository.delete(id);
+            deleted = true;
+        }
+        return deleted;
     }
 
     @Cacheable(value = "Order")
@@ -67,7 +68,7 @@ public class OrderService {
         return this.orderRepository.findOne(id);
     }
 
-//    @CacheEvict(value = "listOrders")
+    @CacheEvict(value = "listOrders")
     public Iterable<Order> listAllOrders(){
         return orderRepository.findAll();
     }

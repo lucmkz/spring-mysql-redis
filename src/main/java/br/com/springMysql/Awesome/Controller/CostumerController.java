@@ -46,11 +46,6 @@ public class CostumerController {
     @ApiOperation(value = "Update a Custumer infotmations", response = Costumer[].class)
     @PutMapping(path = "/{id}")
     public ResponseEntity updateCostumer(@PathVariable(value = "id") Long id, @RequestBody Costumer costumer){
-//        Costumer result = costumerService.getCostumer(id);
-//        if(result == null) {
-//            return new ResponseEntity<>(new CustomErrorType("Costumer not found"), HttpStatus.NOT_FOUND);
-//        }
-//        return new ResponseEntity<>(costumerService.updateCostumer(id, costumer), HttpStatus.OK);
 
         Assert.notNull(costumer);
         costumer.setId(id);

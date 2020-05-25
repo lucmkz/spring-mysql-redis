@@ -26,12 +26,12 @@ public class SwaggerConfig {
     }
 
     private ApiInfo metaData() {
-        return new ApiInfoBuilder().title("Sgit pullpring - Cache")
-                .description("fiap")
+        return new ApiInfoBuilder().title("Persistence FIAP - Spring / MySql / Redis")
+                .description("Trabalho para avaliação da diciplina de Persistence na FIAP MBA")
                 .version("1.0.0")
-                .contact(new Contact("Lucas", "", ""))
-                .license("Apacha Licence")
-                .licenseUrl("qqr url")
+                .contact(new Contact("Lucas", "http://lucaswebs.com", "l.duarte.mk@gmail.com"))
+                .license("Apacha Licence version 2.0")
+                .licenseUrl("https://apache.org/LICENSE-2.0")
                 .build();
     }
 }

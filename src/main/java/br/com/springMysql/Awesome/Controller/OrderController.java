@@ -5,6 +5,7 @@ import br.com.springMysql.Awesome.model.Order;
 import br.com.springMysql.Awesome.model.Product;
 import br.com.springMysql.Awesome.services.CostumerService;
 import br.com.springMysql.Awesome.services.OrderService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,7 @@ public class OrderController {
         this.orderService = orderService;
     }
 
+    @ApiOperation(value = "Create a new Order", response = Order[].class)
     @PostMapping
     public ResponseEntity<?> createOrder(@RequestBody Order order){
 //        System.out.println(order);
@@ -33,6 +35,7 @@ public class OrderController {
                 .orElse(new ResponseEntity<>(HttpStatus.CONFLICT));
     }
 
+    @ApiOperation(value = "Return a list of orders", response = Order[].class)
     @GetMapping
     public ResponseEntity<?> listAllOrders(){
         return new ResponseEntity<>(orderService.listAllOrders(), HttpStatus.OK);

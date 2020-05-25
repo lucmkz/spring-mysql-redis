@@ -2,35 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Docs/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/CostumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/CostumerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Docs/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Docs/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/CostumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/CostumerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/AbstractEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Docs/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/Awesome/Docs/SwaggerConfig.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

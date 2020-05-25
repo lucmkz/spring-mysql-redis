@@ -18,6 +18,7 @@ public class Product extends AbstractEntity{
     public Product() {
     }
 
+
     public Product(String name, String code, int quantity, float value) {
         this.name = name;
         this.code = code;

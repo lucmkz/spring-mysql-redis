@@ -26,7 +26,7 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<?> createOrder(@RequestBody Order order){
-        System.out.println(order);
+//        System.out.println(order);
         Assert.notNull(order);
         return Optional.ofNullable(orderService.createOrder(order))
                 .map(result -> new ResponseEntity<>(result, HttpStatus.CREATED))

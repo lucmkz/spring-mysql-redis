@@ -1,16 +1,15 @@
 package br.com.springMysql.Awesome.model;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
-@Entity
+@Entity(name = "order_product")
+@Table(name = "order_product")
 public class Order extends AbstractEntity{
 
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.MERGE)
     private List<Product> product;
 
 

@@ -25,7 +25,7 @@ public class CostumerService {
         System.out.println("createModel cache");
         Costumer result = null;
 
-        if(!costumerRepository.exists(costumer.getId())) {
+        if(costumer.getId() == null || !costumerRepository.exists(costumer.getId())) {
             result = this.costumerRepository.save(costumer);
         }
         return result;

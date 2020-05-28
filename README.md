@@ -40,7 +40,6 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      "deliveryAddress": "Rua Lins de Vasconcelos, 1", \ 
      "documentId": 10101010, \ 
      "houseAddress": "São Bento, 1", \ 
-     "id": 9999, \ 
      "name": "Lucas", \ 
      "nationality": "Brazil" \ 
  }' 'http://localhost:8080/v1/costumer'
@@ -50,7 +49,6 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
      "code": "999", \ 
-     "id": 999, \ 
      "name": "Leite", \ 
      "quantity": 100, \ 
      "value": 20 \ 
@@ -61,7 +59,6 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
      "code": "999", \ 
-     "id": 999, \ 
      "name": "Pão", \ 
      "quantity": 1000, \ 
      "value": 10 \ 
@@ -71,7 +68,6 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 - Create Order
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-   "id": 999, \ 
    "product": [ \ 
      { \ 
        "id": "1" \ 

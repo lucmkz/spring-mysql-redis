@@ -8,6 +8,7 @@ Project for FIAP MBA Persistence
 - Maven
 - Mysql
 - Redis
+- Docker
 
 ## Quick Start
 

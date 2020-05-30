@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Order extends AbstractEntity{
 
 
-    @OneToMany
+    @ManyToMany
     private List<Product> product;
 
     @OneToOne

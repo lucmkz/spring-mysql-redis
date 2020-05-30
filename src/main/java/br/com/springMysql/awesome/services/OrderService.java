@@ -22,13 +22,6 @@ public class OrderService {
 
     @CacheEvict(value = "order", key = "#order.getId()")
     public Order createOrder (Order order){
-        System.out.println(order);
-        List<Product> listProducts = order.getProduct();
-        for(Product item : listProducts){
-            System.out.println("----------"+ item.getId());
-            System.out.println("------------" + item.getId());
-
-        }
 
         Order result = null;
         if(order.getId() == null || !orderRepository.exists(order.getId())) {

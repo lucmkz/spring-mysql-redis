@@ -27,7 +27,7 @@ public class OrderController {
     public ResponseEntity<?> createOrder(@RequestBody Order order){
         Assert.notNull(order);
         return Optional.ofNullable(orderService.createOrder(order))
-                .map(result -> new ResponseEntity<>(result, HttpStatus.CREATED))
+                .map(result -> new ResponseEntity<>(HttpStatus.CREATED))
                 .orElse(new ResponseEntity<>(HttpStatus.CONFLICT));
     }
 

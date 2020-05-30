@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9760582-55d4-48bf-b19b-33a04e9ead56" name="Default Changelist" comment="Ajuste no serviço de costumer, inclusão de docker compose">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/AplicationStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/AplicationStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Cache/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/cache/CacheConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/CostumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/controller/CostumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Docs/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/docs/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Repository/CostumerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/repository/CostumerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/Repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/error/CustomErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/error/CustomErrorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Costumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/Costumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/services/CostumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/services/CostumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/services/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/Awesome/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springMysql/awesome/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/awesome/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/awesome/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springMysql/awesome/services/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/springMysql/awesome/services/OrderService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

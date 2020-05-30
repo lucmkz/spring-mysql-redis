@@ -10,21 +10,24 @@ Project for FIAP MBA Persistence
 - Redis
 - Docker
 
+
 ## Quick Start
 
 ### Clone source
 ```
-git clone https://github.com/lucmkz/spring-mysql-redis.git
-cd spring-mysql-redis-cache
+$ git clone https://github.com/lucmkz/spring-mysql-redis.git
 ```
 
+### Run Docker
 ```
-MySQL START
+$ cd spring-mysql-redis
+$ docker-compose up
 ```
 
-```
-Redis START
-```
+
+##### - Start MySQL
+##### - Start Redis
+
 
 ##
 ### Swagger-ui REST API Reference & Test
@@ -36,7 +39,7 @@ Redis START
 
 - Create Costumer
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
+$ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
      "deliveryAddress": "Rua Lins de Vasconcelos, 1", \ 
      "documentId": 10101010, \ 
      "houseAddress": "São Bento, 1", \ 
@@ -47,7 +50,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 - Create Product (1)
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
+$ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
      "code": "999", \ 
      "name": "Leite", \ 
      "quantity": 100, \ 
@@ -57,7 +60,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 - Create Product (2)
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
+$ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '  { \ 
      "code": "999", \ 
      "name": "Pão", \ 
      "quantity": 1000, \ 
@@ -67,7 +70,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 - Create Order
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+$ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
    "product": [ \ 
      { \ 
        "id": "1" \ 
